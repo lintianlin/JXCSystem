@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class DBUtils {
     protected static String dbClassName = "com.mysql.jdbc.Driver";
-    protected static String dbUrl = "jdbc:mysql://localhost:3306/jxc?" + "useUnicode=true&characterEncoding=utf-8&useSSL=false";
+    protected static String dbUrl = "jdbc:mysql://localhost:3306/newjxc?" + "useUnicode=true&characterEncoding=utf-8&useSSL=false";
     protected static String dbUser = "root";
     protected static String dbPwd = "root";
     protected static String second = null;

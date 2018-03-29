@@ -16,7 +16,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-
     private JPanel sysManagePanel;
     private JDesktopPane desktopPane;
     private JFrame frame;
