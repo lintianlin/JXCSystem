@@ -1,7 +1,7 @@
 package com.sinfeeloo.invoicing.login.ui;
 
 import com.sinfeeloo.invoicing.Main;
-import com.sinfeeloo.invoicing.base.BaseUi;
+import com.sinfeeloo.invoicing.base.BaseFrame;
 import com.sinfeeloo.invoicing.login.dao.LoginDao;
 import com.sinfeeloo.invoicing.login.pojo.UserBean;
 import com.sinfeeloo.invoicing.login.ui.panel.LoginPanel;
@@ -17,7 +17,7 @@ import java.awt.event.KeyEvent;
  * @Desc: 登录界面窗体
  * @Date: 2018/3/28 15:14
  */
-public class LoginUi extends BaseUi {
+public class LoginUi extends BaseFrame {
     private JLabel userLabel;
     private JLabel pwdLabel;
     private JButton exit;
@@ -63,6 +63,8 @@ public class LoginUi extends BaseUi {
         login = new JButton();
         login.addActionListener(new ActionListener() {
             public void actionPerformed(final ActionEvent e) {
+                userName.setText("admin");
+                userPassword.setText("123");
                 //操作数据库通过用户名查询该用户
                 user = LoginDao.getUser(userName.getText(), userPassword.getText());
                 if (user.getUsername() == null) {//如果用户或者密码错误，则将用户名和密码置为空

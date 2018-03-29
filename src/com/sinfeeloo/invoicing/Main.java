@@ -238,7 +238,7 @@ public class Main {
         JInternalFrame jf = null;
         if (!ifs.containsKey(frameName)) {
             try {
-                Class fClass = Class.forName("internalFrame." + frameName);
+                Class fClass = Class.forName("com.sinfeeloo.invoicing.internalframe." + frameName);
                 Constructor constructor = fClass.getConstructor(null);
                 jf = (JInternalFrame) constructor.newInstance(null);
                 ifs.put(frameName, jf);

@@ -10,14 +10,10 @@ import java.util.List;
  * @Date: 2018/3/28 15:35
  */
 public class DBUtils {
-    protected static String dbClassName = "com.mysql.jdbc.Driver";
-    protected static String dbUrl = "jdbc:mysql://localhost:3306/newjxc?" + "useUnicode=true&characterEncoding=utf-8&useSSL=false";
-    protected static String dbUser = "root";
-    protected static String dbPwd = "root";
+
     protected static String second = null;
 
     private static DBUtils instance = null;
-    public static Connection conn = null;
 
     private DBUtils() {
     }
@@ -29,16 +25,7 @@ public class DBUtils {
         return instance;
     }
 
-    static {
-        try {
-            if (conn == null) {
-                Class.forName(dbClassName).newInstance();
-                conn = DriverManager.getConnection(dbUrl, dbUser, dbPwd);
-            }
-        } catch (Exception ee) {
-            ee.printStackTrace();
-        }
-    }
+
 
 
     /**
@@ -82,6 +69,29 @@ public class DBUtils {
         return result;
     }
 
+
+    public static boolean add(PreparedStatement stmt) {
+        try {
+
+
+
+
+            int i = stmt.executeUpdate();            //执行插入数据操作，返回影响的行数
+            if (i == 1) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally { //finally的用处是不管程序是否出现异常，都要执行finally语句，所以在此处关闭连接
+            try {
+                conn.close(); //打开一个Connection连接后，最后一定要调用它的close（）方法关闭连接，以释放系统资源及数据库资源
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }
+
     /**
      * 更新
      *
@@ -105,8 +115,8 @@ public class DBUtils {
      * @param sql
      * @return
      */
-    public static List findForList(String sql) {
-        List<List> list = new ArrayList<>();
+    public static List<List<String>> findForList(String sql) {
+        List<List<String>> list = new ArrayList<>();
         ResultSet rs = findForResultSet(sql);
         try {
             ResultSetMetaData metaData = rs.getMetaData();
@@ -125,5 +135,17 @@ public class DBUtils {
             e.printStackTrace();
         }
         return list;
+    }
+
+
+    // 执行指定查询
+    public static ResultSet query(String QueryStr) {
+        ResultSet set = findForResultSet(QueryStr);
+        return set;
+    }
+
+    // 执行删除
+    public static int delete(String sql) {
+        return update(sql);
     }
 }

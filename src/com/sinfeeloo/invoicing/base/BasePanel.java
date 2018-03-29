@@ -5,12 +5,13 @@ import javax.swing.*;
 /**
  * @Author: mhj
  * @Desc:
- * @Date: 2018/3/28 15:15
+ * @Date: 2018/3/29 10:59
  */
-public abstract class BaseUi extends JFrame {
+public abstract class BasePanel extends JPanel {
 
 
-    public BaseUi() {
+    public BasePanel() {
+        super();
         initView();
     }
 
