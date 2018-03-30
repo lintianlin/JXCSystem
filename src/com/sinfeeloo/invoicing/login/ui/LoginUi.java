@@ -66,7 +66,7 @@ public class LoginUi extends BaseFrame {
                 userName.setText("admin");
                 userPassword.setText("123");
                 //操作数据库通过用户名查询该用户
-                user = LoginDao.getUser(userName.getText(), userPassword.getText());
+                user = LoginDao.getInstance().getUser(userName.getText(), userPassword.getText());
                 if (user.getUsername() == null) {//如果用户或者密码错误，则将用户名和密码置为空
                     userName.setText(null);
                     userPassword.setText(null);

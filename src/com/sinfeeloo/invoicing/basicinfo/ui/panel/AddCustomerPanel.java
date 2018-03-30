@@ -130,7 +130,7 @@ public class AddCustomerPanel extends BasePanel {
                 customerBean.setOpenbank(openBank.getText().trim());
                 customerBean.setBankcardnum(openBank.getText().trim());
 
-                if (CustomerDao.newInstance().addCustomer(customerBean)) {
+                if (CustomerDao.getInstance().addCustomer(customerBean)) {
                     JOptionPane.showMessageDialog(AddCustomerPanel.this, "添加成功！",
                             "客户添加信息", JOptionPane.INFORMATION_MESSAGE);
                     //重置
@@ -169,7 +169,7 @@ public class AddCustomerPanel extends BasePanel {
                 return false;
             }
             //通过手机号判断该客户是否存在
-            if (CustomerDao.newInstance().isHaveThisCustomer(telephone.getText().trim())) {
+            if (CustomerDao.getInstance().isHaveThisCustomer(telephone.getText().trim())) {
                 JOptionPane.showMessageDialog(AddCustomerPanel.this,
                         "手机号已存在！", "客户添加信息",
                         JOptionPane.INFORMATION_MESSAGE);

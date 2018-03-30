@@ -1,14 +1,12 @@
 package com.sinfeeloo.invoicing.basicinfo.dao;
 
 
-import com.sinfeeloo.invoicing.base.utils.DBUtils;
-import com.sinfeeloo.invoicing.base.utils.DatabaseConnection;
+import com.sinfeeloo.invoicing.base.utils.DbConnUtil;
 import com.sinfeeloo.invoicing.basicinfo.pojo.CustomerBean;
+import com.sinfeeloo.invoicing.basicinfo.pojo.SelectItem;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,12 +16,10 @@ import java.util.List;
  */
 public class CustomerDao {
 
+    //单例模式：保证该对象在程序中永远是唯一的，可以避免重复创建对象造成的系统内存被过多占用
     private static CustomerDao instance = null;
 
-    private CustomerDao() {
-    }
-
-    public static CustomerDao newInstance() {
+    public static CustomerDao getInstance() {
         if (null == instance) {
             instance = new CustomerDao();
         }
@@ -37,19 +33,24 @@ public class CustomerDao {
      * @param telephone
      * @return
      */
-    public boolean isHaveThisCustomer(String telephone) {
-        ResultSet resultSet = DBUtils.findForResultSet("select * from tb_customer where telephone='" + telephone + "'");
+    public boolean isHaveThisCustomer(String telephone) {       //从数据库中查询所需数据
+        Connection conn = null;
         try {
-            if (resultSet.next()) {
-                return true;
+            conn = DbConnUtil.getConn();
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery("select * from tb_customer where telephone='" + telephone + "'");//执行SQL并返回结果集
+            return rs.next();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != conn)
+                    conn.close(); //关闭连接
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-            return false;
-
-        } catch (Exception er) {
-            er.printStackTrace();
         }
-
-        return false;
+        return false;                                             //返回结果
     }
 
 
@@ -63,11 +64,10 @@ public class CustomerDao {
         boolean result = false;
         Connection conn = null;
         try {
-
-            conn = DatabaseConnection.getConn();  //建立数据库连接
-            String sql = "insert into tb_customer(name,shortname,address,telephone,contact,email,openbank,bankcardnum) values(?, ?, ?, ?,?, ?, ?, ?)";
+            conn = DbConnUtil.getConn();  //建立数据库连接
+            String sql = "insert into tb_customer(name,shortname,address,telephone,contact,email,openbank,bankcardnum) " +
+                    "values(?, ?, ?, ?,?, ?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(sql);   //会抛出异常
-
             stmt.setString(1, bean.getName());         //设置SQL语句第一个“？”的值
             stmt.setString(2, bean.getShortName());         //设置SQL语句第一个“？”的值
             stmt.setString(3, bean.getAddress());         //设置SQL语句第一个“？”的值
@@ -84,7 +84,8 @@ public class CustomerDao {
             e.printStackTrace();
         } finally { //finally的用处是不管程序是否出现异常，都要执行finally语句，所以在此处关闭连接
             try {
-                conn.close(); //打开一个Connection连接后，最后一定要调用它的close（）方法关闭连接，以释放系统资源及数据库资源
+                if (null != conn)
+                    conn.close(); //关闭连接
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -99,10 +100,32 @@ public class CustomerDao {
      *
      * @return
      */
-    public List<List<String>> getCustomerList() {
-        List<List<String>> list = DBUtils.findForList("select id,name from tb_customer");
-        return list;
+    public List<SelectItem> getCustomerList() {       //从数据库中查询所需数据
+        List<SelectItem> list = new ArrayList<>();
+        Connection conn = null;
+        try {
+            conn = DbConnUtil.getConn();
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery("select id,name from tb_customer");//执行SQL并返回结果集
+            while (rs.next()) {
+                SelectItem item = new SelectItem();
+                item.setId(rs.getInt("id"));
+                item.setName(rs.getString("name"));
+                list.add(item);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != conn)
+                    conn.close(); //关闭连接
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return list; //返回结果
     }
+
 
     /**
      * 根据id读取客户信息
@@ -110,10 +133,15 @@ public class CustomerDao {
      * @param id
      * @return
      */
-    public CustomerBean getCustomerInfo(String id) {
+    public CustomerBean getCustomerInfo(int id) {
         CustomerBean customerBean = new CustomerBean();
-        ResultSet set = DBUtils.findForResultSet("select * from tb_customer where id='" + id + "'");
+        Connection conn = null;
+        String sql = "select * from tb_customer where id= ? ";
         try {
+            conn = DbConnUtil.getConn();
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setInt(1, id);
+            ResultSet set = statement.executeQuery();
             if (set.next()) {
                 customerBean.setId(set.getInt("id"));
                 customerBean.setName(set.getString("name").trim());
@@ -127,6 +155,13 @@ public class CustomerDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (null != conn)
+                    conn.close(); //关闭连接
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return customerBean;
     }
@@ -138,8 +173,29 @@ public class CustomerDao {
      * @param id
      * @return
      */
-    public int deleteCustomer(String id) {
-        return DBUtils.delete("delete tb_customer where id='" + id + "'");
+    public boolean deleteCustomer(int id) {
+        boolean result = false;
+        Connection conn = null;
+        try {
+            conn = DbConnUtil.getConn();
+            String sql = "delete from tb_customer where id = ?";
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, id);
+            int i = stmt.executeUpdate();
+            if (i == 1) {
+                result = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != conn)
+                    conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
     }
 
 
@@ -148,12 +204,37 @@ public class CustomerDao {
      *
      * @return
      */
-    public int updateCustomer(CustomerBean customerBean) {
-        return DBUtils.update("UPDATE tb_customer SET name='" + customerBean.getName()
-                + "',address='" + customerBean.getAddress() + "',shortname='"
-                + customerBean.getShortName() + "',telephone='" + customerBean.getTelephone() + "',contact='"
-                + customerBean.getContact() + "',email='" + customerBean.getEmail() + "',openbank='"
-                + customerBean.getOpenbank() + "',bankcardnum='" + customerBean.getBankcardnum()
-                + "' where id='" + customerBean.getId() + "'");
+    public boolean updateCustomer(CustomerBean customerBean) {
+        boolean result = false;
+        Connection conn = null;
+        try {
+            conn = DbConnUtil.getConn();
+            String sql = "update tb_customer set name=?,address=?,shortname=?,telephone=?,contact=?,email=?,openbank=?,bankcardnum=? where id=?";  //update语句
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, customerBean.getName());                //设置SQL语句第一个"?"的参数值
+            stmt.setString(2, customerBean.getAddress());
+            stmt.setString(3, customerBean.getShortName());
+            stmt.setString(4, customerBean.getTelephone());
+            stmt.setString(5, customerBean.getContact());
+            stmt.setString(6, customerBean.getEmail());
+            stmt.setString(7, customerBean.getOpenbank());
+            stmt.setString(8, customerBean.getBankcardnum());
+            stmt.setInt(9, customerBean.getId());
+            int flag = stmt.executeUpdate();  //执行修改操作，返回影响的行数
+            if (flag == 1) {   //修改成功返回true
+                result = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != conn)
+                    conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
     }
+
 }

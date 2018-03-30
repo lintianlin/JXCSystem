@@ -6,19 +6,22 @@ package com.sinfeeloo.invoicing.basicinfo.pojo;
  * @Date: 2018/3/29 15:16
  */
 public class SelectItem {
-    private String id;
+    private int id;
     private String name;
 
-    public SelectItem(String id, String name) {
+    public SelectItem() {
+    }
+
+    public SelectItem(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -28,5 +31,9 @@ public class SelectItem {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String toString() {
+        return getName();
     }
 }

@@ -57,9 +57,6 @@ public class ModifyCustomerPanel extends BasePanel {
         // 定位客户简称文本框
         setupComponet(customerShortName, 1, 2, 1, 130, true);
 
-
-        setupComponet(new JLabel("邮政编码："), 2, 2, 1, 0, false);
-
         //联系人
         setupComponet(new JLabel("联系人："), 0, 4, 1, 0, false);
         contact = new JTextField();
@@ -123,7 +120,7 @@ public class ModifyCustomerPanel extends BasePanel {
                 int confirm = JOptionPane.showConfirmDialog(
                         ModifyCustomerPanel.this, "确认删除客户信息吗？");
                 if (confirm == JOptionPane.YES_OPTION) {
-                    if (CustomerDao.newInstance().deleteCustomer(item.getId()) > 0) {
+                    if (CustomerDao.getInstance().deleteCustomer(item.getId())) {
                         JOptionPane.showMessageDialog(ModifyCustomerPanel.this,
                                 "客户：" + item.getName() + "。删除成功");
                         kehu.removeItem(item);
@@ -136,7 +133,7 @@ public class ModifyCustomerPanel extends BasePanel {
             public void actionPerformed(ActionEvent e) {
                 SelectItem item = (SelectItem) kehu.getSelectedItem();
                 CustomerBean customerBean = new CustomerBean();
-                customerBean.setId(Integer.parseInt(item.getId()));
+                customerBean.setId(item.getId());
                 customerBean.setAddress(address.getText().trim());
                 customerBean.setName(customerFullName.getText().trim());
                 customerBean.setShortName(customerShortName.getText().trim());
@@ -145,7 +142,7 @@ public class ModifyCustomerPanel extends BasePanel {
                 customerBean.setTelephone(telephone.getText().trim());
                 customerBean.setOpenbank(openBank.getText().trim());
                 customerBean.setBankcardnum(bankCardNum.getText().trim());
-                if (CustomerDao.newInstance().updateCustomer(customerBean) == 1)
+                if (CustomerDao.getInstance().updateCustomer(customerBean))
                     JOptionPane.showMessageDialog(ModifyCustomerPanel.this, "修改完成");
                 else
                     JOptionPane.showMessageDialog(ModifyCustomerPanel.this, "修改失败");
@@ -158,11 +155,10 @@ public class ModifyCustomerPanel extends BasePanel {
      * 初始化客户下拉选择框
      */
     public void initComboBox() {
-        List<List<String>> customerList = CustomerDao.newInstance().getCustomerList();
-        List<SelectItem> items = new ArrayList<>();
+        List<SelectItem> customerList = CustomerDao.getInstance().getCustomerList();
         kehu.removeAllItems();
-        for (int i = 0; i < customerList.size(); i++) {
-            kehu.addItem(new SelectItem(customerList.get(i).get(0), customerList.get(i).get(1)));
+        for (SelectItem item : customerList) {
+            kehu.addItem(item);
         }
         doSelect();
     }
@@ -176,7 +172,7 @@ public class ModifyCustomerPanel extends BasePanel {
             return;
         }
         selectedItem = (SelectItem) kehu.getSelectedItem();
-        CustomerBean customerBean = CustomerDao.newInstance().getCustomerInfo(selectedItem.getId());
+        CustomerBean customerBean = CustomerDao.getInstance().getCustomerInfo(selectedItem.getId());
         customerFullName.setText(customerBean.getName());
         customerShortName.setText(customerBean.getShortName());
         address.setText(customerBean.getAddress());

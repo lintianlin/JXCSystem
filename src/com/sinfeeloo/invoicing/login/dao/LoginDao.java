@@ -1,8 +1,10 @@
 package com.sinfeeloo.invoicing.login.dao;
 
-import com.sinfeeloo.invoicing.base.utils.DBUtils;
+import com.sinfeeloo.invoicing.base.utils.DbConnUtil;
 import com.sinfeeloo.invoicing.login.pojo.UserBean;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -18,25 +20,33 @@ public class LoginDao {
     private LoginDao() {
     }
 
-    public static LoginDao newInstance() {
+    public static LoginDao getInstance() {
         if (null == instance) {
             instance = new LoginDao();
         }
         return instance;
     }
 
-    // 读取用户
-    public static UserBean getUser(String name, String password) {
+    /**
+     * 读取用户
+     *
+     * @param name
+     * @param password
+     * @return
+     */
+    public UserBean getUser(String name, String password) {
         UserBean user = new UserBean();
-        ResultSet rs = DBUtils.findForResultSet("select * from tb_user where username='" + name + "'");
+        Connection conn = null;
+        String sql = "select * from tb_user where username=? and password=?";
         try {
+            conn = DbConnUtil.getConn();
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1, name);
+            statement.setString(2, password);
+            ResultSet rs = statement.executeQuery();
             if (rs.next()) {
-                user.setUsername(name);
-                user.setPassword(rs.getString("password"));
-                if (user.getPassword().equals(password)) {
-                    user.setUsername(rs.getString("username"));
-                    user.setComment(rs.getString("comment"));
-                }
+                user.setUsername(rs.getString("username"));
+                user.setComment(rs.getString("comment"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
