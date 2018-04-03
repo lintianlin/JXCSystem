@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6070a02a-0200-4c03-8ca1-ae68ce17e7b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/LimitNumKeyListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/OnlyNumKeyListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/GoodsBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsManagement.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DBUtils.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/welcome2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/TextUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButtonEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButtonRender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/CustomerDao.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/CustomerDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/SelectItem.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/SelectItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseFrame.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseInternalFrame.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseInternalFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BasePanel.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BasePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddCustomerPanel.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddCustomerPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyCustomerPanel.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyCustomerPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/dao/LoginDao.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/dao/LoginDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/ui/LoginUi.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/ui/LoginUi.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DatabaseConnection.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DbConnUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java" afterPath="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,16 +31,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GoodsManagement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsManagement.java">
+      <file leaf-file-name="GoodsQuery.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="576">
+              <caret line="161" column="33" lean-forward="true" selection-start-line="161" selection-start-column="33" selection-end-line="161" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1338#1558#0" expanded="true" />
-                <element signature="e#1557#1558#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableColumn.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/table/TableColumn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="466" column="16" lean-forward="false" selection-start-line="466" selection-start-column="16" selection-end-line="466" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyRender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractCellEditor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/AbstractCellEditor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="3704" column="22" lean-forward="false" selection-start-line="3704" selection-start-column="22" selection-end-line="3704" selection-end-column="22" />
+              <folding>
+                <element signature="e#144207#144208#0" expanded="true" />
+                <element signature="e#144239#144240#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultTableModel.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/table/DefaultTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultTableCellRenderer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/table/DefaultTableCellRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="108" column="11" lean-forward="false" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,101 +111,31 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="98" column="76" lean-forward="false" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="76" />
+            <state relative-caret-position="285">
+              <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddGoodPanel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="128" column="37" lean-forward="false" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4766#4767#0" expanded="true" />
-                <element signature="e#4805#4806#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LimitNumKeyListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/LimitNumKeyListener.java">
+      <file leaf-file-name="CustomerManagement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/CustomerManagement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="83" lean-forward="false" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="83" />
+              <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseInternalFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseInternalFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnlyNumKeyListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/OnlyNumKeyListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyListener.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/event/KeyListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyEvent.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/event/KeyEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1431">
-              <caret line="808" column="50" lean-forward="false" selection-start-line="808" selection-start-column="50" selection-end-line="808" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JComboBox.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JComboBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="639" column="15" lean-forward="false" selection-start-line="639" selection-start-column="15" selection-end-line="639" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="113" column="52" lean-forward="true" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1522399752904" expanded="true" signature="1029:1087" ph="select * fro... tb_goods" />
-                <marker date="1522399752904" expanded="true" signature="1720:1948" ph="INSERT INTO tb_goods... " />
-                <marker date="1522399752904" expanded="true" signature="1720:1949" ph="insert into tb_customer... " />
-                <marker date="1522399752904" expanded="true" signature="3628:3661" ph="select code,... tb_supplier" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModifyCustomerPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyCustomerPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="173" column="59" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="59" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,14 +160,18 @@
       <find>,</find>
       <find>CustomerDao</find>
       <find>12290</find>
-      <find>3002</find>
       <find>tf_goodsCode</find>
+      <find>3002</find>
+      <find>setupComponet</find>
+      <find>jb_category</find>
+      <find>dftm</find>
     </findStrings>
     <replaceStrings>
       <replace>CustomerDao</replace>
       <replace>customerBean</replace>
       <replace>;</replace>
       <replace>GoodsDao</replace>
+      <replace>setupComponent</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -191,15 +190,12 @@
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseJInternalFrame.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/ui/panel/LoginPanel.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseJPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BasePanel.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/listener/InputKeyListener.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/SaveButtonActionListener.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/CustomerBean.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/CustomerInfoManagement.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/CustomerManagement.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/CustomerManagement.java" />
-        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddCustomerPanel.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DBUtils.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/dao/LoginDao.java" />
@@ -207,14 +203,28 @@
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyCustomerPanel.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/SelectItem.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/GoodsBean.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsManagement.java" />
-        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/VoteElectKeyListener.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/LimitNumKeyListener.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/OnlyNumKeyListener.java" />
         <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BasePanel.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddCustomerPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/TextUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/listener/MyRender.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/AddRemoveCells.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButtonEditor.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButton.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyEvent.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButtonRender.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseInternalFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java" />
       </list>
     </option>
   </component>
@@ -248,8 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,29 +294,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="invoicing" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
-              <item name="basicinfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
-              <item name="basicinfo" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
-              <item name="basicinfo" type="462c0819:PsiDirectoryNode" />
               <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -317,7 +302,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="invoicing" type="462c0819:PsiDirectoryNode" />
               <item name="basicinfo" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -326,6 +310,14 @@
               <item name="invoicing" type="462c0819:PsiDirectoryNode" />
               <item name="basicinfo" type="462c0819:PsiDirectoryNode" />
               <item name="panel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
+              <item name="basicinfo" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -341,36 +333,13 @@
               <item name="invoicing" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JXCSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JXCSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invoicing" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="panel" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -384,10 +353,15 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\javaspace\JXCSystem\src\com\sinfeeloo\invoicing" />
+      <recent name="F:\javaspace\JXCSystem\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sinfeeloo.invoicing.basicinfo.listener" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\javaspace\JXCSystem\res" />
       <recent name="F:\javaspace\JXCSystem\src\com\sinfeeloo\invoicing" />
       <recent name="F:\javaspace\JxcSystem" />
     </key>
@@ -478,12 +452,14 @@
       <workItem from="1522289388980" duration="771000" />
       <workItem from="1522290612469" duration="18866000" />
       <workItem from="1522371735955" duration="6908000" />
-      <workItem from="1522388538291" duration="11695000" />
+      <workItem from="1522388538291" duration="15551000" />
+      <workItem from="1522630837936" duration="20757000" />
+      <workItem from="1522668031120" duration="4959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38240000" />
+    <option name="totallyTimeSpent" value="67812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -491,24 +467,24 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.111597374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18708971" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46936542" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13676149" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09409191" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2318376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16987179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14989059" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16411379" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -533,97 +509,296 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="5" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/PreparedStatement.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9812">
-          <caret line="472" column="22" lean-forward="false" selection-start-line="472" selection-start-column="22" selection-end-line="472" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="4840">
+          <caret line="250" column="17" lean-forward="true" selection-start-line="250" selection-start-column="17" selection-end-line="250" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
+            <element signature="e#1593#1594#0" expanded="false" />
+            <element signature="e#5247#5248#0" expanded="false" />
+            <element signature="e#5286#5287#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/CustomerManagement.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BasePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddCustomerPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2728">
-          <caret line="132" column="52" lean-forward="true" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="52" />
+        <state relative-caret-position="339">
+          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="1924" column="16" lean-forward="false" selection-start-line="1924" selection-start-column="16" selection-end-line="1924" selection-end-column="16" />
+          <folding>
+            <element signature="e#68197#68198#0" expanded="true" />
+            <element signature="e#68254#68255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="779" column="32" lean-forward="false" selection-start-line="779" selection-start-column="32" selection-end-line="779" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="633" column="19" lean-forward="false" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
+          <folding>
+            <element signature="e#23072#23073#0" expanded="false" />
+            <element signature="e#23112#23113#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/TextUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="142" column="36" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="1483" column="16" lean-forward="false" selection-start-line="1483" selection-start-column="16" selection-end-line="1483" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/welcome.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/welcome2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/welcome.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/价格调整.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/价格调整_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/价格调整_roll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/供应商信息查询.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/供应商信息查询_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/供应商信息查询_roll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/供应商信息管理.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/供应商信息管理_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/入库查询.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/入库查询_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/入库查询_roll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/入库退货查询.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/商品信息查询.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/商品信息查询_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/商品信息查询_roll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/商品信息管理.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/商品信息管理_down.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/商品信息管理_roll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/ActionIcon/入库退货查询_roll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/listener/MyRender.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/AddRemoveCells.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButtonEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/CustomerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#788#789#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DBUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/ui/panel/LoginPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/dao/LoginDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyButtonRender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="176">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
-            <marker date="1522375849783" expanded="true" signature="837:890" ph="select * fro... tb_user" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DBUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Toolkit.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="851" column="39" lean-forward="false" selection-start-line="851" selection-start-column="39" selection-end-line="851" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/ImageIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="185" column="11" lean-forward="false" selection-start-line="185" selection-start-column="11" selection-end-line="185" selection-end-column="11" />
+        <state relative-caret-position="186">
+          <caret line="188" column="36" lean-forward="true" selection-start-line="188" selection-start-column="36" selection-end-line="188" selection-end-column="36" />
           <folding>
-            <element signature="e#5677#5678#0" expanded="false" />
-            <element signature="e#5717#5718#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <marker date="1522650335872" expanded="true" signature="1082:1140" ph="select * fro... tb_goods" />
+            <marker date="1522650335872" expanded="true" signature="1773:2001" ph="INSERT INTO tb_goods... " />
+            <marker date="1522650335872" expanded="true" signature="1773:2002" ph="insert into tb_customer... " />
+            <marker date="1522650335872" expanded="true" signature="3680:3713" ph="select code,... tb_supplier" />
           </folding>
         </state>
       </provider>
@@ -631,90 +806,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseInternalFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#219#220#0" expanded="false" />
-            <element signature="e#245#246#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BasePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="233" column="11" lean-forward="false" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
-          <folding>
-            <element signature="e#6096#6097#0" expanded="false" />
-            <element signature="e#6137#6138#0" expanded="false" />
-            <element signature="e#7455#7456#0" expanded="false" />
-            <element signature="e#7494#7495#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/SaveButtonActionListener.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/AbstractButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="354" column="16" lean-forward="false" selection-start-line="354" selection-start-column="16" selection-end-line="354" selection-end-column="16" />
-          <folding>
-            <element signature="e#12221#12222#0" expanded="false" />
-            <element signature="e#12248#12249#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/listener/InputKeyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="405" column="13" lean-forward="false" selection-start-line="405" selection-start-column="13" selection-end-line="405" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="524" column="11" lean-forward="false" selection-start-line="524" selection-start-column="11" selection-end-line="524" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/CustomerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#788#789#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -722,316 +816,88 @@
     <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/CustomerManagement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="137" column="16" lean-forward="false" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
+          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/CallableStatement.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/BaseInternalFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="59" column="2" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="37" column="2" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="353" column="17" lean-forward="false" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DbConnUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="220">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/base/utils/DBUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/ui/panel/LoginPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/dao/LoginDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding>
-            <marker date="1522375849783" expanded="true" signature="837:890" ph="select * fro... tb_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/login/ui/LoginUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="63" column="6" lean-forward="false" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyGoodPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/GridBagLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10318">
-          <caret line="493" column="11" lean-forward="false" selection-start-line="493" selection-start-column="11" selection-end-line="493" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/GoodsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#1765#1766#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-            <element signature="e#1889#1890#0" expanded="true" />
-            <element signature="e#1947#1948#0" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2232#2233#0" expanded="true" />
-            <element signature="e#2271#2272#0" expanded="true" />
-            <element signature="e#2305#2306#0" expanded="true" />
-            <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2369#2370#0" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2453#2454#0" expanded="true" />
-            <element signature="e#2493#2494#0" expanded="true" />
-            <element signature="e#2529#2530#0" expanded="true" />
-            <element signature="e#2587#2588#0" expanded="true" />
-            <element signature="e#2637#2638#0" expanded="true" />
-            <element signature="e#2671#2672#0" expanded="true" />
-            <element signature="e#2704#2705#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2797#2798#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="e#2860#2861#0" expanded="true" />
-            <element signature="e#2905#2906#0" expanded="true" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3055#3056#0" expanded="true" />
-            <element signature="e#3093#3094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="89" column="11" lean-forward="false" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
-          <folding>
-            <element signature="e#2398#2399#0" expanded="false" />
-            <element signature="e#2430#2431#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/GridBagConstraints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="126" column="5" lean-forward="true" selection-start-line="97" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1522376398308" expanded="true" signature="991:1052" ph="select * fro... tb_employee" />
-            <marker date="1522376398308" expanded="true" signature="1735:1882" ph="insert into company.tb_employee... " />
-            <marker date="1522376398308" expanded="true" signature="3433:3464" ph="select id,na... tb_customer" />
-            <marker date="1522376398308" expanded="true" signature="4255:4290" ph="select * fro... tb_customer" />
-            <marker date="1522376398308" expanded="true" signature="4255:4292" ph="select * fro... tb_customer" />
-            <marker date="1522376398308" expanded="true" signature="5949:5985" ph="delete from " />
-            <marker date="1522376398308" expanded="true" signature="6760:6877" ph="update tb_cu... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/pojo/SelectItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddCustomerPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3390">
-          <caret line="199" column="28" lean-forward="true" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1338#1558#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="98" column="76" lean-forward="false" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="76" />
+        <state relative-caret-position="285">
+          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JComboBox.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/table/DefaultTableCellRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="639" column="15" lean-forward="false" selection-start-line="639" selection-start-column="15" selection-end-line="639" selection-end-column="15" />
+        <state relative-caret-position="253">
+          <caret line="108" column="11" lean-forward="false" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/ModifyCustomerPanel.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/table/DefaultTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="173" column="59" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="59" />
+        <state relative-caret-position="253">
+          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/dao/GoodsDao.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="113" column="52" lean-forward="true" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+        <state relative-caret-position="253">
+          <caret line="3704" column="22" lean-forward="false" selection-start-line="3704" selection-start-column="22" selection-end-line="3704" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1522399752904" expanded="true" signature="1029:1087" ph="select * fro... tb_goods" />
-            <marker date="1522399752904" expanded="true" signature="1720:1948" ph="INSERT INTO tb_goods... " />
-            <marker date="1522399752904" expanded="true" signature="1720:1949" ph="insert into tb_customer... " />
-            <marker date="1522399752904" expanded="true" signature="3628:3661" ph="select code,... tb_supplier" />
+            <element signature="e#144207#144208#0" expanded="true" />
+            <element signature="e#144239#144240#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/event/KeyEvent.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/table/TableColumn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1431">
-          <caret line="808" column="50" lean-forward="false" selection-start-line="808" selection-start-column="50" selection-end-line="808" selection-end-column="50" />
+        <state relative-caret-position="253">
+          <caret line="466" column="16" lean-forward="false" selection-start-line="466" selection-start-column="16" selection-end-line="466" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/event/KeyListener.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/AbstractCellEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        <state relative-caret-position="245">
+          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/LimitNumKeyListener.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/utils/MyRender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="83" lean-forward="false" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="83" />
+        <state relative-caret-position="468">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/listener/OnlyNumKeyListener.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/internalframe/GoodsQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sinfeeloo/invoicing/basicinfo/ui/panel/AddGoodPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="128" column="37" lean-forward="false" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+        <state relative-caret-position="576">
+          <caret line="161" column="33" lean-forward="true" selection-start-line="161" selection-start-column="33" selection-end-line="161" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="e#4805#4806#0" expanded="true" />
           </folding>
         </state>
       </provider>

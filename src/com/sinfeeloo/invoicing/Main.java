@@ -73,7 +73,7 @@ public class Main {
             backLabel.setSize(backWidth, backHeight);
             backLabel.setText("<html><body><image width='" + backWidth
                     + "' height='" + (backHeight - 110) + "' src="
-                    + this.getClass().getResource("welcome.jpg")
+                    + this.getClass().getResource("welcome2.jpg")
                     + "'></img></body></html>");
         }
     }

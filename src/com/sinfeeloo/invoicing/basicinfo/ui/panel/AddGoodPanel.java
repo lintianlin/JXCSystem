@@ -231,20 +231,7 @@ public class AddGoodPanel extends BasePanel {
     }
 
 
-    // 设置组件位置并添加到容器中
-    private void setupComponent(JComponent component, int gridx, int gridy, int gridwidth, int ipadx, boolean fill) {
-        final GridBagConstraints gridBagConstrains = new GridBagConstraints();
-        gridBagConstrains.gridx = gridx;
-        gridBagConstrains.gridy = gridy;
-        gridBagConstrains.insets = new Insets(5, 1, 3, 1);
-        if (gridwidth > 1)
-            gridBagConstrains.gridwidth = gridwidth;
-        if (ipadx > 0)
-            gridBagConstrains.ipadx = ipadx;
-        if (fill)
-            gridBagConstrains.fill = GridBagConstraints.HORIZONTAL;
-        add(component, gridBagConstrains);
-    }
+
 
     // 初始化供应商下拉选择框
     public void initSupplierBox() {
